@@ -5,6 +5,9 @@ import framework from './views/framework'
 import ctiList from './activity/ctiList'
 import MyctiList from './MyaCti/MyctiList'
 import ActivitiesDetails from './MyaCti/ActivitiesDetails'
+import ctiDetails from './activity/ctiDetails'
+import award from './activity/award'
+import ParticipateDetails from './MyaCti/ParticipateDetails'
 
 Vue.use(Router)
 
@@ -21,27 +24,39 @@ export default new Router({
             path: '/',
             name: 'framework',
             component: framework,
-            redirect:Home,
-            children:[
+            redirect: Home,
+            children: [
                 {
-                    path:'/Home',
+                    path: '/Home',
                     name: 'home',
                     component: Home
                 },
                 {
-                    path:'/ctiList',
+                    path: '/ctiList',
                     name: 'ctiList',
                     component: ctiList
                 },
                 {
-                    path:'/MyctiList',
-                    name:'MyctiList',
-                    component:MyctiList
+                    path: '/MyctiList',
+                    name: 'MyctiList',
+                    component: MyctiList
                 },
                 {
-                    path:'/ActivitiesDetails',
-                    name:'ActivitiesDetails',
-                    component:ActivitiesDetails
+                    path: '/ActivitiesDetails',
+                    name: 'ActivitiesDetails',
+                    component: ActivitiesDetails
+                }, {
+                    path: '/ctiDetails',
+                    name: 'ctiDetails',
+                    component: ctiDetails
+                }, {
+                    path: '/award',
+                    name: 'award',
+                    component: award
+                }, {
+                    path: '/ParticipateDetails',
+                    name: 'ParticipateDetails',
+                    component: ParticipateDetails
                 }
 
             ]

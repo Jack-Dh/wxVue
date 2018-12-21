@@ -10,7 +10,7 @@ import VueCookies from 'vue-cookies'
 
 
 
-axios.defaults.headers.common['token'] = 'iTxOQNwMZvG6zH8k5g4TwzoqXvWWfPLHxtsuxDT7BvfTcjpffVeOcHA1P88VmVpa';
+axios.defaults.headers.common['token'] = 'l3xjUitAG5ZiXeHzN6Uxfe8tGX5QqkoSFbfT7hdnKMAkWviCUd72qcOPEaacm936';
 
 Vue.use(VueCookies)
 
