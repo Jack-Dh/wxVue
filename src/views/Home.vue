@@ -19,12 +19,12 @@
                 vertical
                 :autoplay="2000"
                 indicator-color="white"
-                style="width: 100%;height: 20px"
+                style="width: 100%;height: 20px;font-size: 0.8rem"
                 :show-indicators="false"
         >
-            <van-swipe-item>1</van-swipe-item>
-            <van-swipe-item>2</van-swipe-item>
-            <van-swipe-item>3</van-swipe-item>
+            <van-swipe-item>恭喜xxx获得2元微信红包</van-swipe-item>
+            <van-swipe-item>恭喜xxx获得2元微信红包</van-swipe-item>
+            <van-swipe-item>恭喜xxx获得2元微信红包</van-swipe-item>
         </van-swipe>
 
 

@@ -5,15 +5,15 @@
 
         <!--底部菜单-->
         <div class="bottMenu">
-            <div @click="$router.push('/Home')">
+            <div @click="$router.push('/Home'),selected('主页')" :class="{active :active=='主页'}">
                 <i style="font-size: 1.6rem;" class="iconfont icon-xiatubiao--copy"></i>
                 <div>主页</div>
             </div>
-            <div @click="$router.push('/ctiList')">
+            <div @click="$router.push('/ctiList'),selected('活动')" :class="{active :active=='活动'}">
                 <i style="font-size: 1.6rem;"  class="iconfont icon-huodong"></i>
                 <div>活动</div>
             </div>
-            <div @click="$router.push('/MyctiList')">
+            <div @click="$router.push('/MyctiList'),selected('我的')" :class="{active :active=='我的'}">
                 <i style="font-size: 1.6rem"  class="iconfont icon-wode"></i>
                 <div>我的</div>
             </div>
@@ -26,7 +26,16 @@
 
 <script>
     export default {
-        name: "framework"
+        name: "framework",
+        methods:{
+            selected(active){
+                this.active=active
+                console.log(active)
+            }
+        },
+        created:function () {
+            this.active='主页' //设置主页默认高亮显示
+        }
     }
 </script>
 
@@ -52,4 +61,8 @@
     }
     /*.bottMenu*/
     .bottMenu p{margin-top: -2%}
+    .active {
+
+        color: #00aaee;
+    }
 </style>

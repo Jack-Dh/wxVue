@@ -21,5 +21,8 @@
 </script>
 
 <style scoped>
+    .active {
 
+        color: #00aaee;
+    }
 </style>
