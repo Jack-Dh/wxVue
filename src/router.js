@@ -8,6 +8,7 @@ import ActivitiesDetails from './MyaCti/ActivitiesDetails'
 import ctiDetails from './activity/ctiDetails'
 import award from './activity/award'
 import ParticipateDetails from './MyaCti/ParticipateDetails'
+import reload from './pulic/reload'
 
 Vue.use(Router)
 
@@ -15,13 +16,13 @@ export default new Router({
     mode: 'history',
     base: process.env.BASE_URL,
     routes: [
-        // {
-        //     path: '/',
-        //     name: 'home',
-        //     component: Home
-        // },
         {
             path: '/',
+            name: 'reload',
+            component: reload
+        },
+        {
+            path: '/framework',
             name: 'framework',
             component: framework,
             redirect: Home,
